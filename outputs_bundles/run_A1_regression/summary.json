@@ -1,0 +1,58 @@
+{
+  "W100.0_N1": {
+    "A_mean": 0.28107886059802867,
+    "A_std": 0.003949730791126234,
+    "P0": 0.9799596,
+    "P1": 0.0200404,
+    "kappa_eff": 3.8897611101788856,
+    "mean_Sv": 1.0,
+    "std_Sv": 0.0,
+    "mean_lifetime": 100000.0,
+    "median_lifetime": 100000.0,
+    "frac_survived": 1.0,
+    "L_persist_mean": 49.90702394478268,
+    "L_persist_median": 49.78842707241074
+  },
+  "W10.0_N1": {
+    "A_mean": 0.5726621203102161,
+    "A_std": 0.009473074814614428,
+    "P0": 0.799126,
+    "P1": 0.200874,
+    "kappa_eff": 1.3808407846260664,
+    "mean_Sv": 1.0,
+    "std_Sv": 0.0,
+    "mean_lifetime": 10000.0,
+    "median_lifetime": 10000.0,
+    "frac_survived": 1.0,
+    "L_persist_mean": 4.977765312835677,
+    "L_persist_median": 4.9800796812749
+  },
+  "W20.0_N1": {
+    "A_mean": 0.5290973094887236,
+    "A_std": 0.007336598666780699,
+    "P0": 0.900093,
+    "P1": 0.099907,
+    "kappa_eff": 2.1982583380404392,
+    "mean_Sv": 1.0,
+    "std_Sv": 0.0,
+    "mean_lifetime": 20000.0,
+    "median_lifetime": 20000.0,
+    "frac_survived": 1.0,
+    "L_persist_mean": 10.008314090437409,
+    "L_persist_median": 10.005005005005005
+  },
+  "W50.0_N1": {
+    "A_mean": 0.38462359043683003,
+    "A_std": 0.004522821437883968,
+    "P0": 0.9601088,
+    "P1": 0.0398912,
+    "kappa_eff": 3.180890863157112,
+    "mean_Sv": 1.0,
+    "std_Sv": 0.0,
+    "mean_lifetime": 50000.0,
+    "median_lifetime": 50000.0,
+    "frac_survived": 1.0,
+    "L_persist_mean": 25.068337187820102,
+    "L_persist_median": 25.075231983621876
+  }
+}

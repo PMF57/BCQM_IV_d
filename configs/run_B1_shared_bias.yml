@@ -1,0 +1,48 @@
+model_name: "run_B1_shared_bias"
+output_dir: "outputs_bundles/run_B1_shared_bias"
+
+random_seed: 23456
+
+wcoh_grid: [20, 50, 100]
+bundle_sizes: [1, 2, 4, 8, 16, 32]
+
+ensemble:
+  n_ensembles: 50
+  steps_per_wcoh: 1000
+
+kernel:
+  type: "soft_rudder_bundle"
+  step_size: 1.0
+  slip_law:
+    form: "power_law"
+    alpha: 1.0
+    k_prefactor: 2.0   # same soft-rudder law as A-runs: q(W) = 2 / W
+
+bundle_coupling:
+  mode: "shared_bias"
+  coupling_strength: 0.25   # mild glue: Sv enters effective stay probability
+
+phase_dynamics:
+  enabled: false
+  law: "bundle_stability_v0"
+  params:
+    base_rate: 1.0
+    wcoh_scaling: "none"
+    stability_weight: 0.5
+
+analysis:
+  psd:
+    window: "hann"
+    segment_length: 512
+    overlap: 0.5
+  amplitude_fit:
+    freq_min: 0.01
+    freq_max: 0.1
+  beta_fit:
+    log_wcoh_min: 1.0
+    log_wcoh_max: 2.5
+  kappa_eff:
+    window_size: 1
+  lifetime:
+    f_min: 0.6
+    evap_window: 20
