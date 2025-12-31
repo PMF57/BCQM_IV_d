@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: >-
+  If you use this code for research, teaching, or derivative work, please cite
+  it using the metadata below.
+title: bcqm_bundles: BCQM IV_d bundle inertial-noise simulations
+version: 1.0.0
+type: software
+authors:
+  - family-names: Ferguson
+    given-names: Peter M.
+    orcid: https://orcid.org/0009-0006-6260-5058
+repository-code: https://github.com/PMF57/bcqm_bundles
+license: MIT
+keywords:
+  - BCQM
+  - Boundary-Condition Quantum Mechanics
+  - inertial noise
+  - event chains
+  - bundles
+  - coherence horizon
+abstract: >-
+  bcqm_bundles is the reference implementation for Boundary-Condition Quantum
+  Mechanics IV_d (BCQM IV_d). It simulates bundles of soft-rudder primitive
+  threads, with optional shared-bias glue, to study how the centre-of-mass
+  inertial noise amplitude scales with the coherence horizon W_coh and bundle
+  size N. The repository provides the A-series (single-thread regression and
+  independent bundles) and B-series (shared-bias bundles) runs used in the IV_d
+  paper, together with analysis and figure-generation scripts.
+preferred-citation:
+  type: article
+  title: Boundary-Condition Quantum Mechanics IV_d — Bundle inertial noise and diffusive ceilings
+  authors:
+    - family-names: Ferguson
+      given-names: Peter M.
+      orcid: https://orcid.org/0009-0006-6260-5058
+  year: 2025
+  doi: 10.5281/zenodo.18034190
+  journal: Zenodo
