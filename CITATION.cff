@@ -9,7 +9,7 @@ authors:
   - family-names: Ferguson
     given-names: Peter M.
     orcid: https://orcid.org/0009-0006-6260-5058
-repository-code: https://github.com/PMF57/bcqm_bundles
+repository-code: https://github.com/PMF57/BCQM_IV_d
 license: MIT
 keywords:
   - BCQM
@@ -26,6 +26,9 @@ abstract: >-
   size N. The repository provides the A-series (single-thread regression and
   independent bundles) and B-series (shared-bias bundles) runs used in the IV_d
   paper, together with analysis and figure-generation scripts.
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18108766
 preferred-citation:
   type: article
   title: Boundary-Condition Quantum Mechanics IV_d — Bundle inertial noise and diffusive ceilings

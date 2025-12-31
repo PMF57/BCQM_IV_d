@@ -1,5 +1,7 @@
 # bcqm_bundles — BCQM IV_d bundle inertial-noise simulations
 
+**Zenodo code archive DOI:** [10.5281/zenodo.18108766](https://doi.org/10.5281/zenodo.18108766)
+
 This repository contains the reference implementation for **Boundary-Condition
 Quantum Mechanics IV_d** (“BCQM IV_d”), which studies inertial noise for
 **bundles of primitive threads** within the Stage 1 BCQM programme.
@@ -136,7 +138,7 @@ implementation.
 
    Config: `configs/run_A1_regression.yml`  
    Purpose: sanity check that the bcqm_bundles implementation of the soft-rudder
-   kernel reproduces the IV_c single-thread scaling.
+   kernel reproduces the IV_c single-thread scaling within the IV_d pipeline.
 
    ```bash
    python3 -m bcqm_bundles.cli run configs/run_A1_regression.yml
@@ -159,11 +161,11 @@ implementation.
 These introduce a **shared-bias coupling λ** between threads in a bundle and
 scan N to see how COM noise and β_COM respond.
 
-Example configs (adjust names to match your repo):
+Configs:
 
-- `configs/run_B1_shared_bias.yml`  (λ = 0.25)
-- `configs/run_B2_shared_bias_stronger.yml`  (λ = 0.5)
-- `configs/run_B3_shared_bias_75.yml`  (λ = 0.75)
+- `configs/run_B1_shared_bias.yml`          (moderate λ)
+- `configs/run_B2_shared_bias_stronger.yml` (stronger λ)
+- `configs/run_B3_shared_bias_75.yml`       (strongest λ used in the paper)
 
 Example usage:
 
@@ -243,9 +245,9 @@ the published IV_d numbers (up to floating-point and library-version noise).
 
 - Licence: see `LICENSE` (fill with your preferred open licence).
 - Citation: see `CITATION.cff` for a machine-readable citation that links the
-  code to the BCQM IV_d paper and Zenodo record.
+  code to the BCQM IV_d paper and this Zenodo archive.
 
 If you use this code in your own work, please cite both:
 
-- the BCQM IV_d paper,
-- and the bcqm_bundles code DOI (Zenodo archive).
+- the BCQM IV_d paper (concept DOI: `10.5281/zenodo.18034190`),
+- and the bcqm_bundles code archive (software DOI: `10.5281/zenodo.18108766`).
