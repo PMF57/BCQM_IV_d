@@ -39,8 +39,8 @@ bcqm_bundles/
 ├── configs/
 │   ├── run_A1_regression.yml
 │   ├── run_A2_independent.yml
-│   ├── run_B1_shared_bias_25.yml
-│   ├── run_B2_shared_bias_50.yml
+│   ├── run_B1_shared_bias.yml
+│   ├── run_B2_shared_bias_stronger.yml
 │   ├── run_B3_shared_bias_75.yml
 │   └── wcoh_bundle_scan_example.yml
 ├── outputs_bundles/
@@ -161,18 +161,18 @@ scan N to see how COM noise and β_COM respond.
 
 Example configs (adjust names to match your repo):
 
-- `configs/run_B1_shared_bias_25.yml`  (λ = 0.25)
-- `configs/run_B2_shared_bias_50.yml`  (λ = 0.5)
+- `configs/run_B1_shared_bias.yml`  (λ = 0.25)
+- `configs/run_B2_shared_bias_stronger.yml`  (λ = 0.5)
 - `configs/run_B3_shared_bias_75.yml`  (λ = 0.75)
 
 Example usage:
 
 ```bash
-python3 -m bcqm_bundles.cli run configs/run_B1_shared_bias_25.yml
-python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B1_shared_bias_25
+python3 -m bcqm_bundles.cli run configs/run_B1_shared_bias.yml
+python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B1_shared_bias
 
-python3 -m bcqm_bundles.cli run configs/run_B2_shared_bias_50.yml
-python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B2_shared_bias_50
+python3 -m bcqm_bundles.cli run configs/run_B2_shared_bias_stronger.yml
+python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B2_shared_bias_stronger
 
 python3 -m bcqm_bundles.cli run configs/run_B3_shared_bias_75.yml
 python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B3_shared_bias_75
@@ -194,7 +194,7 @@ Each run creates a subdirectory under `outputs_bundles/`, e.g.:
 
 ```text
 outputs_bundles/
-└── run_B2_shared_bias_50/
+└── run_B2_shared_bias_stronger/
     ├── metadata.json
     ├── summary.json
     ├── trajectories_*.npy            # optional, may be omitted for large runs

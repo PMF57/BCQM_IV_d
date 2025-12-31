@@ -44,8 +44,8 @@ Key responsibilities:
 - Define the expected structure of config files, e.g.:
 
   ```yaml
-  run_id: run_B2_shared_bias_50
-  output_dir: outputs_bundles/run_B2_shared_bias_50
+  run_id: run_B2_shared_bias_stronger
+  output_dir: outputs_bundles/run_B2_shared_bias_stronger
   random_seed: 123456
   n_steps: 2000
   dt: 0.1
@@ -127,7 +127,7 @@ Important functions:
 Typical usage via CLI:
 
 ```bash
-python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B2_shared_bias_50
+python3 -m bcqm_bundles.cli analyse outputs_bundles/run_B2_shared_bias_stronger
 ```
 
 Key tasks:
